@@ -3,39 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    </style>
   <title>Bag Flare</title>
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    .font-poppins{
+      font-family: "Poppins", system-ui;
+    }
+    .font-bebas{
+      font-family: "Bebas Neue", system-ui;
+    }
+  </style>
 </head>
 <body class="">
-    <header class="">
-      <section class="w-4/5 mx-auto">
-        <nav class="flex my-10">
-          <div class="logo-container flex items-center">
-            <img class="w-16" src="./images/logo.png" alt="">
-            <h2 class="font-poppins font-bold">Bag<span class="text-violet-800"> Flare</span> </h2>
+    <header class="bg-violet-100">
+      <section class="w-11/12 md:w-4/5 mx-auto max-sm:w-11/12">
+        <nav class="flex py-10 items-center justify-between">
+          <div class="logo-container flex items-center gap-2">
+            <img class="w-10" src="./images/logo.png" alt="">
+            <h2 class="font-poppins font-bold text-4xl">Bag<span class="text-violet-800"> Flare</span> </h2>
           </div>
-          <ul class="flex mb-hidden">
+          <ul class="flex max-sm:hidden md:flex gap-8">
             <li><a href="#" class="">Home</a></li>
             <li><a href="#" class="">Product</a></li>
             <li><a href="#" class="">About Us</a></li>
             <li><a href="#" class="">Contact Us</a></li>
           </ul>
-          <div class="">
+          <div class="sm:hidden">
             <i class="fa-regular fa-bars"></i>
           </div>
         </nav>
-        <div class="banner flex">
-          <div class="banner-text">
-            <h1 class=""><span class="">Be the Penguins</span><br>of Winter</h1>
-            <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <button><i class="fa-regular fa-cart-shopping"></i> Buy now</button>
+        <div class="banner flex max-sm:flex-col items-center gap-28 max-sm:gap-3 pb-9">
+          <div class="banner-text w-1/2 max-md:w-full">
+            <h1 class="font-bold text-8xl font-bebas mb-4">BackPack <br><span class=" text-violet-800">Moon
+            </span></h1>
+            <p class="w-3/4 mb-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button class="px-10 py-5 bg-gradient-to-b from-violet-600  to-violet-800 rounded-xl text-white"><i class="fa-regular fa-cart-shopping"></i> Buy now</button>
           </div>
-          <div class="banner-img">
-            <img src="./images/featured.png" alt="">
+          <div class="banner-img w-1/2 max-md:w-full">
+            <img class="w-full" src="./images/featured.png" alt="">
           </div>
         </div>
       </section>
